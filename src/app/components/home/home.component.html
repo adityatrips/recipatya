@@ -1,0 +1,12 @@
+<div *ngFor="let r of this.recipie.recipes">
+  <br />
+  <app-recipie-card
+    [cardTitle]="r.title"
+    [imageUrl]="r.image"
+    [servesNumber]="r.servings"
+    [readyInMinutes]="r.readyInMinutes"
+    [likes]="r.aggregateLikes"
+    [pricePerServe]="r.pricePerServing"
+    [recipieId]="r.id"
+  ></app-recipie-card>
+</div>

@@ -1,0 +1,72 @@
+[debug] [2022-07-27T15:52:57.202Z] ----------------------------------------------------------------------
+[debug] [2022-07-27T15:52:57.204Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-27T15:52:57.204Z] CLI Version:   11.1.0
+[debug] [2022-07-27T15:52:57.204Z] Platform:      win32
+[debug] [2022-07-27T15:52:57.204Z] Node Version:  v16.14.2
+[debug] [2022-07-27T15:52:57.205Z] Time:          Wed Jul 27 2022 21:22:57 GMT+0530 (India Standard Time)
+[debug] [2022-07-27T15:52:57.205Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-27T15:52:57.254Z] Field ".hosting.rewrites" in "firebase.json" is possibly invalid: should be array
+[debug] [2022-07-27T15:52:57.254Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
+[debug] [2022-07-27T15:52:57.254Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-27T15:52:57.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-27T15:52:57.258Z] > authorizing via signed-in user (adityatripathi.at04@gmail.com)
+[debug] [2022-07-27T15:52:57.258Z] [iam] checking project recipatya for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-27T15:52:57.260Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions [none]
+[debug] [2022-07-27T15:52:57.260Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-27T15:52:58.711Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions 200
+[debug] [2022-07-27T15:52:58.711Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-27T15:52:58.712Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/recipatya [none]
+[debug] [2022-07-27T15:52:59.187Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/recipatya 200
+[debug] [2022-07-27T15:52:59.187Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/recipatya {"projectId":"recipatya","projectNumber":"600615556717","displayName":"recipatya","name":"projects/recipatya","resources":{"hostingSite":"recipatya"},"state":"ACTIVE","etag":"1_c6aeeef0-beb3-4d74-b66d-2309a735c7b7"}
+[info] 
+[info] === Deploying to 'recipatya'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-27T15:52:59.190Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/recipatya [none]
+[debug] [2022-07-27T15:52:59.663Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/recipatya 200
+[debug] [2022-07-27T15:52:59.663Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/recipatya {"projectId":"recipatya","projectNumber":"600615556717","displayName":"recipatya","name":"projects/recipatya","resources":{"hostingSite":"recipatya"},"state":"ACTIVE","etag":"1_c6aeeef0-beb3-4d74-b66d-2309a735c7b7"}
+[debug] [2022-07-27T15:52:59.901Z] TypeError: (cfg.rewrites || []).filter is not a function
+    at validateDeploy (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\validate.js:14:64)
+    at prepare (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\prepare.js:31:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:68:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-07-27T15:53:13.330Z] ----------------------------------------------------------------------
+[debug] [2022-07-27T15:53:13.331Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-27T15:53:13.332Z] CLI Version:   11.1.0
+[debug] [2022-07-27T15:53:13.332Z] Platform:      win32
+[debug] [2022-07-27T15:53:13.332Z] Node Version:  v16.14.2
+[debug] [2022-07-27T15:53:13.332Z] Time:          Wed Jul 27 2022 21:23:13 GMT+0530 (India Standard Time)
+[debug] [2022-07-27T15:53:13.333Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-27T15:53:13.381Z] Field ".hosting.rewrites" in "firebase.json" is possibly invalid: should be array
+[debug] [2022-07-27T15:53:13.381Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
+[debug] [2022-07-27T15:53:13.382Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2022-07-27T15:53:13.385Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-27T15:53:13.385Z] > authorizing via signed-in user (adityatripathi.at04@gmail.com)
+[debug] [2022-07-27T15:53:13.386Z] [iam] checking project recipatya for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-27T15:53:13.387Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions [none]
+[debug] [2022-07-27T15:53:13.387Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-27T15:53:14.899Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions 200
+[debug] [2022-07-27T15:53:14.899Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/recipatya:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-27T15:53:14.901Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/recipatya [none]
+[debug] [2022-07-27T15:53:15.390Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/recipatya 200
+[debug] [2022-07-27T15:53:15.390Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/recipatya {"projectId":"recipatya","projectNumber":"600615556717","displayName":"recipatya","name":"projects/recipatya","resources":{"hostingSite":"recipatya"},"state":"ACTIVE","etag":"1_c6aeeef0-beb3-4d74-b66d-2309a735c7b7"}
+[info] 
+[info] === Deploying to 'recipatya'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-27T15:53:15.393Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/recipatya [none]
+[debug] [2022-07-27T15:53:15.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/recipatya 200
+[debug] [2022-07-27T15:53:15.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/recipatya {"projectId":"recipatya","projectNumber":"600615556717","displayName":"recipatya","name":"projects/recipatya","resources":{"hostingSite":"recipatya"},"state":"ACTIVE","etag":"1_c6aeeef0-beb3-4d74-b66d-2309a735c7b7"}
+[debug] [2022-07-27T15:53:16.132Z] TypeError: (cfg.rewrites || []).filter is not a function
+    at validateDeploy (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\validate.js:14:64)
+    at prepare (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\prepare.js:31:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\adity\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:68:5)
+[error] 
+[error] Error: An unexpected error has occurred.
