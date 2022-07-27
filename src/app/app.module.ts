@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
@@ -15,7 +14,6 @@ import { ngZorroModule } from './ngZorroModule';
 import { HomeComponent } from './components/home/home.component';
 import { RecipieCardComponent } from './components/recipie-card/recipie-card.component';
 import { RecipieInstructionComponent } from './components/recipie-instruction/recipie-instruction.component';
-import { ViewRecipiesComponent } from './components/view-recipies/view-recipies.component';
 import { FourOfourComponent } from './components/four-ofour/four-ofour.component';
 import { SearchComponent } from './components/search/search.component';
 
@@ -28,7 +26,6 @@ registerLocaleData(en);
     HomeComponent,
     RecipieCardComponent,
     RecipieInstructionComponent,
-    ViewRecipiesComponent,
     FourOfourComponent,
     SearchComponent,
   ],

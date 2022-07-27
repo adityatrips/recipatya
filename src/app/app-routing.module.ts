@@ -1,6 +1,5 @@
 import { SearchComponent } from './components/search/search.component';
 import { FourOfourComponent } from './components/four-ofour/four-ofour.component';
-import { ViewRecipiesComponent } from './components/view-recipies/view-recipies.component';
 import { RecipieInstructionComponent } from './components/recipie-instruction/recipie-instruction.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -14,10 +13,6 @@ const routes: Routes = [
   {
     path: 'recipie/:id',
     component: RecipieInstructionComponent,
-  },
-  {
-    path: 'recipies',
-    component: ViewRecipiesComponent,
   },
   {
     path: 'search',
