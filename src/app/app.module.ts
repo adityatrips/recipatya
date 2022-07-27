@@ -7,7 +7,7 @@ import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/header/header.component';
@@ -17,15 +17,26 @@ import { RecipieCardComponent } from './components/recipie-card/recipie-card.com
 import { RecipieInstructionComponent } from './components/recipie-instruction/recipie-instruction.component';
 import { ViewRecipiesComponent } from './components/view-recipies/view-recipies.component';
 import { FourOfourComponent } from './components/four-ofour/four-ofour.component';
+import { SearchComponent } from './components/search/search.component';
 
 registerLocaleData(en);
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, RecipieCardComponent, RecipieInstructionComponent, ViewRecipiesComponent, FourOfourComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    RecipieCardComponent,
+    RecipieInstructionComponent,
+    ViewRecipiesComponent,
+    FourOfourComponent,
+    SearchComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ngZorroModule,

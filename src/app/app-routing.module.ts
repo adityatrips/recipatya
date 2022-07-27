@@ -1,3 +1,4 @@
+import { SearchComponent } from './components/search/search.component';
 import { FourOfourComponent } from './components/four-ofour/four-ofour.component';
 import { ViewRecipiesComponent } from './components/view-recipies/view-recipies.component';
 import { RecipieInstructionComponent } from './components/recipie-instruction/recipie-instruction.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'recipies',
     component: ViewRecipiesComponent,
+  },
+  {
+    path: 'search',
+    component: SearchComponent,
   },
   {
     path: '**',

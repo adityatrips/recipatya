@@ -12,14 +12,14 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   getRecipie(
-    cuisine: string,
-    exludeCuisine?: string,
+    query: string,
+    cuisine?: string,
     diet?: string,
     intolerances?: string,
     type?: string
   ): Observable<Recipie[]> {
     return this.http.get<Recipie[]>(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${this.apiKey}&cuisine=${cuisine}&exludeCuisine=${exludeCuisine}&diet=${diet}&intolerances=${intolerances}&type=${type}`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${this.apiKey}&query=${query}&cuisine=${cuisine}&diet=${diet}&intolerances=${intolerances}&type=${type}&number=100`
     );
   }
 
